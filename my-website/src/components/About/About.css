@@ -1,0 +1,239 @@
+.about-section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-color);
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    color: #9e9e9e;
+    margin-bottom: 60px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 580px;
+    padding-top: 40px;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d3d3d3;
+    margin-bottom: 30px;
+  }
+  
+  .download-cv-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+  }
+  
+  .download-cv-btn:hover {
+    background-color: #e09600;
+  }
+  
+  .download-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .svg-icon {
+    width: 60px;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .svg-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+  }
+  
+  .skills-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 80px;
+  }
+  
+  .skill-item {
+    text-align: center;
+  }
+  
+  .skill-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+  }
+  
+  .skill-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 10px;
+  }
+
+  .skill-gif {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  .skill-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Makes text readable over GIFs */
+  }
+
+  .progress-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .gif-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .git-text {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .skill-percentage {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 1100px) {
+    .about-content {
+      gap: 40px;
+    }
+    
+    .about-image {
+      max-width: 350px;
+    }
+    
+    .about-text {
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .about-image {
+      max-width: 400px;
+    }
+    
+    .about-text {
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    .download-cv-btn {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills-section {
+      gap: 40px;
+    }
+    
+    .skill-circle {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .about-content {
+      margin-bottom: 60px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-image {
+      max-width: 300px;
+    }
+    
+    .skills-section {
+      gap: 30px;
+    }
+    
+    .skill-circle {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .skill-name {
+      font-size: 14px;
+    }
+  }
