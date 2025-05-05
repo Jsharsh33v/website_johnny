@@ -10,14 +10,14 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Run HTML Validator
-      uses: Cyb3r-Jak3/html-validate-action@v0.4.0
+      - name: Run HTML Validator
+        uses: Cyb3r-Jak3/html-validate-action@v0.4.0
 
-    - name: Run Lighthouse Accessibility Test
-      uses: treosh/lighthouse-ci-action@v10
-      with:
-        urls: 'https://janym.netlify.app'
-        configPath: '.lighthouserc.json'
+      - name: Run Lighthouse Accessibility Test
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: 'https://janym.netlify.app'
+          configPath: '.lighthouserc.json'
