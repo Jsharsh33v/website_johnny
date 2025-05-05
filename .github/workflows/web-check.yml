@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run HTML Validator
-        uses: сyb3rjak3/html-validate-action@v0.4.0
+        uses: cyb3rjak3/html-validate-action@v0.4.0
 
       - name: Run Lighthouse Accessibility Test
         uses: treosh/lighthouse-ci-action@v10
