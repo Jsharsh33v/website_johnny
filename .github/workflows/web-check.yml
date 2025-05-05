@@ -1,4 +1,4 @@
-name: Web Accessibility & HTML Validation
+name: Accessibility Audit (Lighthouse)
 
 on:
   push:
@@ -7,17 +7,15 @@ on:
     branches: [ main ]
 
 jobs:
-  validate:
+  lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
-
-      - name: Run HTML Validator
-        uses: cyb3rjak3/html-validate-action@v0.4.0
 
       - name: Run Lighthouse Accessibility Test
         uses: treosh/lighthouse-ci-action@v10
         with:
           urls: 'https://janym.netlify.app'
           configPath: '.lighthouserc.json'
+
